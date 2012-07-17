@@ -19,9 +19,10 @@
 -->
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.magicsmoke">
+    package="net.homeip.tedk.ksusmoke">
 
-    <original-package android:name="com.android.magicsmoke" />
+    <original-package android:name="net.homeip.tedk.ksusmoke" />
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15"/>
 
     <uses-feature android:name="android.software.live_wallpaper" />
 
@@ -41,12 +42,6 @@
             </intent-filter>
             <meta-data android:name="android.service.wallpaper" android:resource="@xml/magicsmoke" />
         </service>
-
-        <activity
-            android:name="com.android.magicsmoke.MagicSmokeSelector"
-            android:theme="@style/Preview"
-            android:exported="true">
-        </activity>
 
     </application>
 

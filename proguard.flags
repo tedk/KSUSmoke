@@ -1,7 +1,7 @@
--keep class com.android.magicsmoke.**$WorldState {
+-keep class net.homeip.tedk.ksusmoke.**$WorldState {
   public <fields>;
 }
 
--keepclassmembers class com.android.magicsmoke.MagicSmokeSelector {
+-keepclassmembers class net.homeip.tedk.ksusmoke.MagicSmokeSelector {
   public void setLiveWallpaper(android.view.View);
 }
