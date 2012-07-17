@@ -22,6 +22,6 @@
 
 <wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
     android:author="@string/author"
+    android:description="@string/magicsmoke_desc"
     android:thumbnail="@drawable/magicsmoke_thumb"
-    android:settingsActivity="com.android.magicsmoke.MagicSmokeSelector"
 />

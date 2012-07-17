@@ -14,7 +14,7 @@
 
 #pragma version(1)
 
-#pragma rs java_package_name(com.android.magicsmoke)
+#pragma rs java_package_name(net.homeip.tedk.ksusmoke)
 
 #include "rs_graphics.rsh"
 

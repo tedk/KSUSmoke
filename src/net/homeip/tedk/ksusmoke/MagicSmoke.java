@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.magicsmoke;
+package net.homeip.tedk.ksusmoke;
 
 public class MagicSmoke extends RenderScriptWallpaper<MagicSmokeRS> {
 

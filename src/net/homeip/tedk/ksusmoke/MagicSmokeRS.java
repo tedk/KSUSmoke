@@ -14,30 +14,29 @@
  * limitations under the License.
  */
 
-package com.android.magicsmoke;
+package net.homeip.tedk.ksusmoke;
 
 import static android.renderscript.Sampler.Value.LINEAR;
 import static android.renderscript.Sampler.Value.WRAP;
-
-import com.android.magicsmoke.R;
-
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.MediaPlayer;
-import android.os.Handler;
-import android.renderscript.*;
-import android.renderscript.Element.Builder;
+import android.os.Bundle;
+import android.renderscript.Allocation;
+import android.renderscript.Element;
+import android.renderscript.Matrix4f;
+import android.renderscript.Program;
+import android.renderscript.ProgramFragment;
+import android.renderscript.ProgramStore;
 import android.renderscript.ProgramStore.BlendDstFunc;
 import android.renderscript.ProgramStore.BlendSrcFunc;
-import android.util.Log;
-import android.view.MotionEvent;
-import android.os.Bundle;
-
-import java.util.TimeZone;
+import android.renderscript.ProgramVertex;
+import android.renderscript.ProgramVertexFixedFunction;
+import android.renderscript.Sampler;
+import android.renderscript.ScriptC;
+import android.renderscript.Type;
 
 class MagicSmokeRS extends RenderScriptScene implements OnSharedPreferenceChangeListener {
 
@@ -115,10 +114,11 @@ class MagicSmokeRS extends RenderScriptScene implements OnSharedPreferenceChange
         public boolean mPreMul;
     }
 
-    public static final int DEFAULT_PRESET = 16;
+    public static final int DEFAULT_PRESET = 0;
     public static final Preset [] mPreset = new Preset[] {
         //       proc    back     low       high     alph  mask  rot    swap   premul
-        new Preset(1,  0x000000, 0x000000, 0xffffff, 2.0f, 0x0f, true,  false, false),
+    	new Preset(1,  0x56009C, 0x8500F2, 0xA649F2, 2.5f, 0x0f, true,  true,  true)
+      /*new Preset(1,  0x000000, 0x000000, 0xffffff, 2.0f, 0x0f, true,  false, false),
         new Preset(1,  0x0000ff, 0x000000, 0xffffff, 2.0f, 0x0f, true,  false, false),
         new Preset(1,  0x00ff00, 0x000000, 0xffffff, 2.0f, 0x0f, true,  false, false),
         new Preset(1,  0x00ff00, 0x000000, 0xffffff, 2.0f, 0x0f, true,  false, true),
@@ -137,7 +137,7 @@ class MagicSmokeRS extends RenderScriptScene implements OnSharedPreferenceChange
         new Preset(1,  0x000000, 0x000000, 0xffffff, 2.0f, 0x0f, true,  true,  false),
         new Preset(2,  0x000000, 0x000070, 0xff2020, 2.5f, 0x1f, true,  false, false),
         new Preset(2,  0x6060ff, 0x000070, 0xffffff, 2.5f, 0x1f, true,  false, false),
-        new Preset(3,  0x0000f0, 0x000000, 0xffffff, 2.0f, 0x0f, true,  true,  false),
+        new Preset(3,  0x0000f0, 0x000000, 0xffffff, 2.0f, 0x0f, true,  true,  false),*/
     };
 
     private float mTouchY;

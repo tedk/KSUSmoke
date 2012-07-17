@@ -15,13 +15,12 @@
  */
 
 
-package com.android.magicsmoke;
+package net.homeip.tedk.ksusmoke;
 
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.renderscript.RenderScriptGL;
 import android.renderscript.ScriptC;
-//import android.view.MotionEvent;
 
 public abstract class RenderScriptScene {
     protected int mWidth;

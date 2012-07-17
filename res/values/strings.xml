@@ -21,12 +21,13 @@
     <!-- General -->
     <skip />
     <!-- Application name -->
-    <string name="wallpapers">Magic Smoke Wallpapers</string>
+    <string name="wallpapers">KSU Smoke</string>
 
     <!-- Wallpapers showing smoke, clouds, water, plasmas -->
-    <string name="wallpaper_magicsmoke">Magic Smoke</string>
+    <string name="wallpaper_magicsmoke">KSU Smoke</string>
 
-    <string name="author">Google</string>
+    <string name="author">TedK/Google</string>
+    <string name="magicsmoke_desc">KSU Theme.  Based on AOSP\'s MagicSmoke.</string>
 
     <!-- button label -->
     <string name="ok">OK</string>
