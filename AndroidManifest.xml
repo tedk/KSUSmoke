@@ -22,7 +22,7 @@
     package="net.homeip.tedk.ksusmoke">
 
     <original-package android:name="net.homeip.tedk.ksusmoke" />
-    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15"/>
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="11"/>
 
     <uses-feature android:name="android.software.live_wallpaper" />
 
