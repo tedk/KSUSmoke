@@ -19,9 +19,9 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wallpapers" msgid="9040514152147134380">"Funds davos fim magic"</string>
-    <string name="wallpaper_magicsmoke" msgid="1982855461335812678">"Fim magic"</string>
+    <string name="wallpapers" msgid="9040514152147134380">"මායා දුම් වෝල්පේපරය"</string>
+    <string name="wallpaper_magicsmoke" msgid="1982855461335812678">"මායා දුම"</string>
     <string name="author" msgid="3728706901510651795">"Google"</string>
-    <string name="ok" msgid="2096612745586722488">"OK"</string>
-    <string name="taptochange" msgid="2128130912969723119">"Tutgar per midar"</string>
+    <string name="ok" msgid="2096612745586722488">"හරි"</string>
+    <string name="taptochange" msgid="2128130912969723119">"වෙනස් කිරීමට තට්ටු කරන්න"</string>
 </resources>
